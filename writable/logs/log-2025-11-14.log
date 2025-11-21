@@ -1,0 +1,577 @@
+CRITICAL - 2025-11-14 00:33:49 --> ErrorException: include(assets/grocery_crud/themes/bootstrap-v5/config.php): Failed to open stream: No such file or directory
+[Method: GET, Route: user/datauser]
+in APPPATH/Libraries/GroceryCrud.php on line 2608.
+ 1 APPPATH/Libraries/GroceryCrud.php(2608): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(assets/grocery_crud/themes/bootstrap-v5/config.php): Failed to open stream: No such file or directory', '/Users/fairuziiszam/Documents/Projects/Leony-BWL/app/Libraries/GroceryCrud.php', 2608)
+ 2 APPPATH/Libraries/GroceryCrud.php(2608): include()
+ 3 APPPATH/Libraries/GroceryCrud.php(4298): App\Libraries\grocery_CRUD_Layout->setThemeBasics()
+ 4 APPPATH/Controllers/User.php(105): App\Libraries\GroceryCrud->render()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->datauser()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+CRITICAL - 2025-11-14 00:34:25 --> ErrorException: include(assets/grocery_crud/themes/bootstrap-v4/config.php): Failed to open stream: No such file or directory
+[Method: GET, Route: user/datauser]
+in APPPATH/Libraries/GroceryCrud.php on line 2608.
+ 1 APPPATH/Libraries/GroceryCrud.php(2608): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(assets/grocery_crud/themes/bootstrap-v4/config.php): Failed to open stream: No such file or directory', '/Users/fairuziiszam/Documents/Projects/Leony-BWL/app/Libraries/GroceryCrud.php', 2608)
+ 2 APPPATH/Libraries/GroceryCrud.php(2608): include()
+ 3 APPPATH/Libraries/GroceryCrud.php(4298): App\Libraries\grocery_CRUD_Layout->setThemeBasics()
+ 4 APPPATH/Controllers/User.php(105): App\Libraries\GroceryCrud->render()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->datauser()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+CRITICAL - 2025-11-14 00:36:19 --> Exception: The template does not exist. Please check your files and try again.
+[Method: GET, Route: user/datauser]
+in APPPATH/Libraries/GroceryCrud.php on line 1332.
+ 1 APPPATH/Libraries/GroceryCrud.php(4300): App\Libraries\grocery_CRUD_Layout->set_basic_Layout()
+ 2 APPPATH/Controllers/User.php(105): App\Libraries\GroceryCrud->render()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->datauser()
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+CRITICAL - 2025-11-14 00:37:16 --> ErrorException: include(assets/grocery_crud/themes/bootstrap-v4/config.php): Failed to open stream: No such file or directory
+[Method: GET, Route: user/datauser]
+in APPPATH/Libraries/GroceryCrud.php on line 2608.
+ 1 APPPATH/Libraries/GroceryCrud.php(2608): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(assets/grocery_crud/themes/bootstrap-v4/config.php): Failed to open stream: No such file or directory', '/Users/fairuziiszam/Documents/Projects/Leony-BWL/app/Libraries/GroceryCrud.php', 2608)
+ 2 APPPATH/Libraries/GroceryCrud.php(2608): include()
+ 3 APPPATH/Libraries/GroceryCrud.php(4298): App\Libraries\grocery_CRUD_Layout->setThemeBasics()
+ 4 APPPATH/Controllers/User.php(105): App\Libraries\GroceryCrud->render()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->datauser()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+CRITICAL - 2025-11-14 00:37:16 --> ErrorException: include(assets/grocery_crud/themes/bootstrap-v4/config.php): Failed to open stream: No such file or directory
+[Method: GET, Route: user/datauser]
+in APPPATH/Libraries/GroceryCrud.php on line 2608.
+ 1 APPPATH/Libraries/GroceryCrud.php(2608): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(assets/grocery_crud/themes/bootstrap-v4/config.php): Failed to open stream: No such file or directory', '/Users/fairuziiszam/Documents/Projects/Leony-BWL/app/Libraries/GroceryCrud.php', 2608)
+ 2 APPPATH/Libraries/GroceryCrud.php(2608): include()
+ 3 APPPATH/Libraries/GroceryCrud.php(4298): App\Libraries\grocery_CRUD_Layout->setThemeBasics()
+ 4 APPPATH/Controllers/User.php(105): App\Libraries\GroceryCrud->render()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->datauser()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+CRITICAL - 2025-11-14 00:46:01 --> ErrorException: include(assets/grocery_crud/themes/bootstrap-v4/config.php): Failed to open stream: No such file or directory
+[Method: GET, Route: user/datauser]
+in APPPATH/Libraries/GroceryCrud.php on line 2608.
+ 1 APPPATH/Libraries/GroceryCrud.php(2608): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(assets/grocery_crud/themes/bootstrap-v4/config.php): Failed to open stream: No such file or directory', '/Users/fairuziiszam/Documents/Projects/Leony-BWL/app/Libraries/GroceryCrud.php', 2608)
+ 2 APPPATH/Libraries/GroceryCrud.php(2608): include()
+ 3 APPPATH/Libraries/GroceryCrud.php(4298): App\Libraries\grocery_CRUD_Layout->setThemeBasics()
+ 4 APPPATH/Controllers/User.php(105): App\Libraries\GroceryCrud->render()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->datauser()
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+CRITICAL - 2025-11-14 09:36:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/index.php"
+[Method: GET, Route: user]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/index.php')
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('user/index', [], true)
+ 3 APPPATH/Controllers/User.php(40): view('user/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->index()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+CRITICAL - 2025-11-14 09:37:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/index.php"
+[Method: GET, Route: user]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/index.php')
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('user/index', [], true)
+ 3 APPPATH/Controllers/User.php(40): view('user/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->index()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+CRITICAL - 2025-11-14 09:37:10 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/index.php"
+[Method: GET, Route: user]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/index.php')
+ 2 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('user/index', [], true)
+ 3 APPPATH/Controllers/User.php(40): view('user/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->index()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+ERROR - 2025-11-14 09:38:12 --> mysqli_sql_exception: Table 'lbwl.users' doesn't exist in /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Validation/Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Validation/StrictRules/Rules.php(187): CodeIgniter\Validation\Rules->is_unique('pimpinan', 'users.username', Array)
+#6 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Validation/Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('pimpinan', 'users.username', Array, NULL, 'username')
+#7 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Validation/Validation.php(201): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pimpinan', Array, Array, 'username')
+#8 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/BaseModel.php(1580): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#9 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/BaseModel.php(812): CodeIgniter\BaseModel->validate(Array)
+#10 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#11 /Users/fairuziiszam/Documents/Projects/Leony-BWL/app/Controllers/User.php(81): CodeIgniter\Model->insert(Array)
+#12 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\User->store()
+#13 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#14 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#16 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#17 /Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#18 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('/Users/fairuzii...')
+#19 {main}
+CRITICAL - 2025-11-14 09:38:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'lbwl.users' doesn't exist
+[Method: POST, Route: user/store]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Validation/Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/Validation/StrictRules/Rules.php(187): CodeIgniter\Validation\Rules->is_unique('pimpinan', 'users.username', [...])
+ 4 SYSTEMPATH/Validation/Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('pimpinan', 'users.username', [...], null, 'username')
+ 5 SYSTEMPATH/Validation/Validation.php(201): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pimpinan', [...], [...], 'username')
+ 6 SYSTEMPATH/BaseModel.php(1580): CodeIgniter\Validation\Validation->run([...], null, null)
+ 7 SYSTEMPATH/BaseModel.php(812): CodeIgniter\BaseModel->validate([...])
+ 8 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH/Controllers/User.php(81): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->store()
+11 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+CRITICAL - 2025-11-14 09:38:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'lbwl.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `username` = \'pimpinan\'
+ LIMIT 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `username` = \'pimpinan\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH/Validation/Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/Validation/StrictRules/Rules.php(187): CodeIgniter\Validation\Rules->is_unique('pimpinan', 'users.username', [...])
+ 6 SYSTEMPATH/Validation/Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('pimpinan', 'users.username', [...], null, 'username')
+ 7 SYSTEMPATH/Validation/Validation.php(201): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pimpinan', [...], [...], 'username')
+ 8 SYSTEMPATH/BaseModel.php(1580): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH/BaseModel.php(812): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+11 APPPATH/Controllers/User.php(81): CodeIgniter\Model->insert([...])
+12 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->store()
+13 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+14 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+CRITICAL - 2025-11-14 09:38:12 --> [Caused by] mysqli_sql_exception: Table 'lbwl.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('SELECT 1
+FROM `users`
+WHERE `username` = \'pimpinan\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `username` = \'pimpinan\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `username` = \'pimpinan\'
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH/Validation/Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/Validation/StrictRules/Rules.php(187): CodeIgniter\Validation\Rules->is_unique('pimpinan', 'users.username', [...])
+ 7 SYSTEMPATH/Validation/Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('pimpinan', 'users.username', [...], null, 'username')
+ 8 SYSTEMPATH/Validation/Validation.php(201): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pimpinan', [...], [...], 'username')
+ 9 SYSTEMPATH/BaseModel.php(1580): CodeIgniter\Validation\Validation->run([...], null, null)
+10 SYSTEMPATH/BaseModel.php(812): CodeIgniter\BaseModel->validate([...])
+11 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+12 APPPATH/Controllers/User.php(81): CodeIgniter\Model->insert([...])
+13 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->store()
+14 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+15 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+19 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+ERROR - 2025-11-14 09:38:39 --> mysqli_sql_exception: Table 'lbwl.users' doesn't exist in /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Validation/Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Validation/StrictRules/Rules.php(187): CodeIgniter\Validation\Rules->is_unique('pimpinan', 'users.username', Array)
+#6 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Validation/Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('pimpinan', 'users.username', Array, NULL, 'username')
+#7 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Validation/Validation.php(201): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pimpinan', Array, Array, 'username')
+#8 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/BaseModel.php(1580): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#9 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/BaseModel.php(812): CodeIgniter\BaseModel->validate(Array)
+#10 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#11 /Users/fairuziiszam/Documents/Projects/Leony-BWL/app/Controllers/User.php(81): CodeIgniter\Model->insert(Array)
+#12 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\User->store()
+#13 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#14 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#16 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#17 /Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#18 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('/Users/fairuzii...')
+#19 {main}
+CRITICAL - 2025-11-14 09:38:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'lbwl.users' doesn't exist
+[Method: POST, Route: user/store]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Validation/Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/Validation/StrictRules/Rules.php(187): CodeIgniter\Validation\Rules->is_unique('pimpinan', 'users.username', [...])
+ 4 SYSTEMPATH/Validation/Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('pimpinan', 'users.username', [...], null, 'username')
+ 5 SYSTEMPATH/Validation/Validation.php(201): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pimpinan', [...], [...], 'username')
+ 6 SYSTEMPATH/BaseModel.php(1580): CodeIgniter\Validation\Validation->run([...], null, null)
+ 7 SYSTEMPATH/BaseModel.php(812): CodeIgniter\BaseModel->validate([...])
+ 8 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH/Controllers/User.php(81): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->store()
+11 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+CRITICAL - 2025-11-14 09:38:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'lbwl.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `username` = \'pimpinan\'
+ LIMIT 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `username` = \'pimpinan\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH/Validation/Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/Validation/StrictRules/Rules.php(187): CodeIgniter\Validation\Rules->is_unique('pimpinan', 'users.username', [...])
+ 6 SYSTEMPATH/Validation/Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('pimpinan', 'users.username', [...], null, 'username')
+ 7 SYSTEMPATH/Validation/Validation.php(201): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pimpinan', [...], [...], 'username')
+ 8 SYSTEMPATH/BaseModel.php(1580): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH/BaseModel.php(812): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+11 APPPATH/Controllers/User.php(81): CodeIgniter\Model->insert([...])
+12 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->store()
+13 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+14 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+CRITICAL - 2025-11-14 09:38:39 --> [Caused by] mysqli_sql_exception: Table 'lbwl.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('SELECT 1
+FROM `users`
+WHERE `username` = \'pimpinan\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `username` = \'pimpinan\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `username` = \'pimpinan\'
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH/Validation/Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/Validation/StrictRules/Rules.php(187): CodeIgniter\Validation\Rules->is_unique('pimpinan', 'users.username', [...])
+ 7 SYSTEMPATH/Validation/Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('pimpinan', 'users.username', [...], null, 'username')
+ 8 SYSTEMPATH/Validation/Validation.php(201): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pimpinan', [...], [...], 'username')
+ 9 SYSTEMPATH/BaseModel.php(1580): CodeIgniter\Validation\Validation->run([...], null, null)
+10 SYSTEMPATH/BaseModel.php(812): CodeIgniter\BaseModel->validate([...])
+11 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+12 APPPATH/Controllers/User.php(81): CodeIgniter\Model->insert([...])
+13 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->store()
+14 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+15 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+19 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+ERROR - 2025-11-14 09:39:04 --> mysqli_sql_exception: Table 'lbwl.users' doesn't exist in /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Validation/Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Validation/StrictRules/Rules.php(187): CodeIgniter\Validation\Rules->is_unique('pimpinan', 'users.username', Array)
+#6 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Validation/Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('pimpinan', 'users.username', Array, NULL, 'username')
+#7 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Validation/Validation.php(201): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pimpinan', Array, Array, 'username')
+#8 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/BaseModel.php(1580): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#9 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/BaseModel.php(812): CodeIgniter\BaseModel->validate(Array)
+#10 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#11 /Users/fairuziiszam/Documents/Projects/Leony-BWL/app/Controllers/User.php(81): CodeIgniter\Model->insert(Array)
+#12 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\User->store()
+#13 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#14 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#16 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#17 /Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#18 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('/Users/fairuzii...')
+#19 {main}
+CRITICAL - 2025-11-14 09:39:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'lbwl.users' doesn't exist
+[Method: POST, Route: user/store]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Validation/Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/Validation/StrictRules/Rules.php(187): CodeIgniter\Validation\Rules->is_unique('pimpinan', 'users.username', [...])
+ 4 SYSTEMPATH/Validation/Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('pimpinan', 'users.username', [...], null, 'username')
+ 5 SYSTEMPATH/Validation/Validation.php(201): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pimpinan', [...], [...], 'username')
+ 6 SYSTEMPATH/BaseModel.php(1580): CodeIgniter\Validation\Validation->run([...], null, null)
+ 7 SYSTEMPATH/BaseModel.php(812): CodeIgniter\BaseModel->validate([...])
+ 8 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH/Controllers/User.php(81): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->store()
+11 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+CRITICAL - 2025-11-14 09:39:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'lbwl.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `username` = \'pimpinan\'
+ LIMIT 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `username` = \'pimpinan\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH/Validation/Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/Validation/StrictRules/Rules.php(187): CodeIgniter\Validation\Rules->is_unique('pimpinan', 'users.username', [...])
+ 6 SYSTEMPATH/Validation/Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('pimpinan', 'users.username', [...], null, 'username')
+ 7 SYSTEMPATH/Validation/Validation.php(201): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pimpinan', [...], [...], 'username')
+ 8 SYSTEMPATH/BaseModel.php(1580): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH/BaseModel.php(812): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+11 APPPATH/Controllers/User.php(81): CodeIgniter\Model->insert([...])
+12 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->store()
+13 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+14 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+CRITICAL - 2025-11-14 09:39:04 --> [Caused by] mysqli_sql_exception: Table 'lbwl.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('SELECT 1
+FROM `users`
+WHERE `username` = \'pimpinan\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `username` = \'pimpinan\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `username` = \'pimpinan\'
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH/Validation/Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/Validation/StrictRules/Rules.php(187): CodeIgniter\Validation\Rules->is_unique('pimpinan', 'users.username', [...])
+ 7 SYSTEMPATH/Validation/Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('pimpinan', 'users.username', [...], null, 'username')
+ 8 SYSTEMPATH/Validation/Validation.php(201): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pimpinan', [...], [...], 'username')
+ 9 SYSTEMPATH/BaseModel.php(1580): CodeIgniter\Validation\Validation->run([...], null, null)
+10 SYSTEMPATH/BaseModel.php(812): CodeIgniter\BaseModel->validate([...])
+11 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+12 APPPATH/Controllers/User.php(81): CodeIgniter\Model->insert([...])
+13 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->store()
+14 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+15 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+19 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+ERROR - 2025-11-14 09:45:32 --> mysqli_sql_exception: Table 'lbwl.users' doesn't exist in /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:327
+Stack trace:
+#0 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(327): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Validation/Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Validation/StrictRules/Rules.php(187): CodeIgniter\Validation\Rules->is_unique('pimpinan', 'users.username', Array)
+#6 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Validation/Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('pimpinan', 'users.username', Array, NULL, 'username')
+#7 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Validation/Validation.php(201): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pimpinan', Array, Array, 'username')
+#8 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/BaseModel.php(1580): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#9 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/BaseModel.php(812): CodeIgniter\BaseModel->validate(Array)
+#10 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#11 /Users/fairuziiszam/Documents/Projects/Leony-BWL/app/Controllers/User.php(81): CodeIgniter\Model->insert(Array)
+#12 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\User->store()
+#13 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#14 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Boot.php(334): CodeIgniter\CodeIgniter->run()
+#16 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#17 /Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#18 /Users/fairuziiszam/Documents/Projects/Leony-BWL/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('/Users/fairuzii...')
+#19 {main}
+CRITICAL - 2025-11-14 09:45:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'lbwl.users' doesn't exist
+[Method: POST, Route: user/store]
+in SYSTEMPATH/Database/BaseConnection.php on line 692.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Validation/Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/Validation/StrictRules/Rules.php(187): CodeIgniter\Validation\Rules->is_unique('pimpinan', 'users.username', [...])
+ 4 SYSTEMPATH/Validation/Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('pimpinan', 'users.username', [...], null, 'username')
+ 5 SYSTEMPATH/Validation/Validation.php(201): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pimpinan', [...], [...], 'username')
+ 6 SYSTEMPATH/BaseModel.php(1580): CodeIgniter\Validation\Validation->run([...], null, null)
+ 7 SYSTEMPATH/BaseModel.php(812): CodeIgniter\BaseModel->validate([...])
+ 8 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH/Controllers/User.php(81): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->store()
+11 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+CRITICAL - 2025-11-14 09:45:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'lbwl.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 332.
+ 1 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `username` = \'pimpinan\'
+ LIMIT 1')
+ 2 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `username` = \'pimpinan\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH/Validation/Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/Validation/StrictRules/Rules.php(187): CodeIgniter\Validation\Rules->is_unique('pimpinan', 'users.username', [...])
+ 6 SYSTEMPATH/Validation/Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('pimpinan', 'users.username', [...], null, 'username')
+ 7 SYSTEMPATH/Validation/Validation.php(201): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pimpinan', [...], [...], 'username')
+ 8 SYSTEMPATH/BaseModel.php(1580): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH/BaseModel.php(812): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+11 APPPATH/Controllers/User.php(81): CodeIgniter\Model->insert([...])
+12 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->store()
+13 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+14 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+CRITICAL - 2025-11-14 09:45:32 --> [Caused by] mysqli_sql_exception: Table 'lbwl.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 327.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(327): mysqli->query('SELECT 1
+FROM `users`
+WHERE `username` = \'pimpinan\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `username` = \'pimpinan\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `username` = \'pimpinan\'
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH/Validation/Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/Validation/StrictRules/Rules.php(187): CodeIgniter\Validation\Rules->is_unique('pimpinan', 'users.username', [...])
+ 7 SYSTEMPATH/Validation/Validation.php(336): CodeIgniter\Validation\StrictRules\Rules->is_unique('pimpinan', 'users.username', [...], null, 'username')
+ 8 SYSTEMPATH/Validation/Validation.php(201): CodeIgniter\Validation\Validation->processRules('username', 'username', 'pimpinan', [...], [...], 'username')
+ 9 SYSTEMPATH/BaseModel.php(1580): CodeIgniter\Validation\Validation->run([...], null, null)
+10 SYSTEMPATH/BaseModel.php(812): CodeIgniter\BaseModel->validate([...])
+11 SYSTEMPATH/Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+12 APPPATH/Controllers/User.php(81): CodeIgniter\Model->insert([...])
+13 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\User->store()
+14 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+15 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+19 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+CRITICAL - 2025-11-14 15:15:34 --> ErrorException: include(layout/footer.php): Failed to open stream: No such file or directory
+[Method: GET, Route: spj/create]
+in APPPATH/Views/spj/create.php on line 44.
+ 1 APPPATH/Views/spj/create.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(layout/footer.php): Failed to open stream: No such file or directory', '/Users/fairuziiszam/Documents/Projects/Leony-BWL/app/Views/spj/create.php', 44)
+ 2 APPPATH/Views/spj/create.php(44): include()
+ 3 SYSTEMPATH/View/View.php(224): include('/Users/fairuziiszam/Documents/Projects/Leony-BWL/app/Views/spj/create.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('spj/create', [], true)
+ 6 APPPATH/Controllers/Spj.php(34): view('spj/create', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Spj->create()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spj))
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')
+CRITICAL - 2025-11-14 15:19:55 --> ErrorException: include(/Users/fairuziiszam/Documents/Projects/Leony-BWL/app/layout/footer.php): Failed to open stream: No such file or directory
+[Method: GET, Route: spj/list]
+in APPPATH/Views/spj/list.php on line 56.
+ 1 APPPATH/Views/spj/list.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(/Users/fairuziiszam/Documents/Projects/Leony-BWL/app/layout/footer.php): Failed to open stream: No such file or directory', '/Users/fairuziiszam/Documents/Projects/Leony-BWL/app/Views/spj/list.php', 56)
+ 2 APPPATH/Views/spj/list.php(56): include()
+ 3 SYSTEMPATH/View/View.php(224): include('/Users/fairuziiszam/Documents/Projects/Leony-BWL/app/Views/spj/list.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1173): CodeIgniter\View\View->render('spj/list', [], true)
+ 6 APPPATH/Controllers/Spj.php(99): view('spj/list', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Spj->list()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spj))
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/rewrite.php(44): require_once('/Users/fairuziiszam/Documents/Projects/Leony-BWL/public/index.php')

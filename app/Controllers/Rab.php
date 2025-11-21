@@ -34,9 +34,9 @@ class Rab extends BaseController
         /* if (session()->get('role') <> 'admin') {
             return redirect()->to('/home');
         } */
-        if (empty(session()->get('id_kecamatan')) || empty(session()->get('kecamatan'))) {
-            session()->setFlashdata('error', 'Kecamatan tidak ditemukan');
-        }
+        // if (empty(session()->get('id_kecamatan')) || empty(session()->get('kecamatan'))) {
+        //     session()->setFlashdata('error', 'Kecamatan tidak ditemukan');
+        // }
         $crud = new GroceryCrud();
         $crud->setTheme('flexigrid'); // Set the theme to datatables
         $crud->setTable('t_rab');

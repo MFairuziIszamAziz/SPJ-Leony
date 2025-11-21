@@ -13,9 +13,9 @@ class ModelUser extends Model
     protected $createdField = 'created_at';
     protected $updatedField = 'updated_at';
     protected $validationRules = [
-        'username' => 'required|min_length[3]|max_length[20]|is_unique[users.username]',
+        'username' => 'required|min_length[3]|max_length[20]|is_unique[t_user.username]',
         'password' => 'required|min_length[3]',
-        'role' => 'required|in_list[admin,user]'
+        'role' => 'required|in_list[admin,staff,pimpinan]'
     ];
     protected $validationMessages = [
         'username' => [

@@ -3,87 +3,73 @@
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-                        <div class="sb-sidenav-menu-heading"></div>
-                        <a class="nav-link" href="/">
-                            <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
-                            Dashboard
-                        </a>
-                        <div class="sb-sidenav-menu-heading">Perencanaan</div>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                            <div class="sb-nav-link-icon"><i class="fas fa-bars"></i></div>
-                            Perencanaan
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                        </a>
-                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav">
+    <div class="sb-sidenav-menu-heading"></div>
 
-                                <?php
-                                //     if (session()->get('role') === 'admin') { 
-                                ?>
-                                <a class="nav-link" href="/akun">
-                                    <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>Data Akun
-                                </a>
-                                <?php // } 
-                                ?>
-                                <a class="nav-link" href="/rab">
-                                    <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div> RAB
-                                </a>
-                                <?php
-                                if (session()->get('role') === 'admin') {
-                                ?>
-                                    <a class="nav-link" href="/UploadController">
-                                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div> Upload RAB
-                                    </a>
-                                <?php  }
-                                ?>
-                            </nav>
-                        </div>
-                        <div class="sb-sidenav-menu-heading">Pembukuan</div>
-                        <a class="nav-link" href="/kuitansi">
-                            <div class="sb-nav-link-icon"><i class="fas fa-briefcase"></i></div>
-                            Buat Kuitansi
-                        </a>
-                        <a class="nav-link" href="/pelaporan">
-                            <div class="sb-nav-link-icon"><i class="fas fa-briefcase"></i></div>
-                            Buat BKU
-                        </a>
-                        <div class="sb-sidenav-menu-heading">Setting</div>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayoutssetting" aria-expanded="false" aria-controls="collapseLayouts">
-                            <div class="sb-nav-link-icon"><i class="fas fa-gears"></i></div>
-                            Setting
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                        </a>
-                        <div class="collapse" id="collapseLayoutssetting" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="/setting/kecamatan">
-                                    <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                    Kecamatan
-                                </a>
-                                <a class="nav-link" href="/setting/user">
-                                    <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
-                                    User Kecamatan
-                                </a>
-                                <a class="nav-link" href="/setting/pejabat">
-                                    <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
-                                    SPK Kecamatan
-                                </a>
-                                <a class="nav-link" href="/setting/pejabat_kabupaten">
-                                    <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
-                                    PPK dan BP
-                                </a>
+    <?php $role = session()->get('role'); ?>
+
+    <?php if ($role === 'staff'): ?>
+
+        <!-- DASHBOARD STAFF -->
+        <a class="nav-link" href="<?= base_url('/'); ?>">
+            <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
+            Dashboard
+        </a>
+
+        <!-- INPUT SPJ (STAFF) -->
+        <a class="nav-link" href="<?= base_url('/spj/create'); ?>">
+            <div class="sb-nav-link-icon"><i class="fas fa-bars"></i></div>
+            Input SPJ
+        </a>
+
+        <!-- STATUS SPJ (STAFF) -->
+        <a class="nav-link" href="<?= base_url('/spj/list'); ?>">
+            <div class="sb-nav-link-icon"><i class="fas fa-list"></i></div>
+            Status SPJ
+        </a>
+
+        <!-- PENGATURAN AKUN (STAFF) -->
+        <a class="nav-link" href="<?= base_url('/setting'); ?>">
+            <div class="sb-nav-link-icon"><i class="fas fa-gears"></i></div>
+            Pengaturan Akun
+        </a>
+
+    <?php endif; ?>
 
 
-                            </nav>
-                        </div>
-                        <?php
-                        if (session()->get('role') === 'admin') { ?>
-                            <div class="sb-sidenav-menu-heading">Setting admin</div>
-                            <a class="nav-link" href="/user">
-                                <div class="sb-nav-link-icon"><i class="fas fa-briefcase"></i></div>
-                                Setting Profile
-                            </a>
-                        <?php  } ?>
-                    </div>
+    <?php if (in_array($role, ['admin', 'verifikator'])): ?>
+
+        <!-- DASHBOARD ADMIN / VERIFIKATOR -->
+        <a class="nav-link" href="<?= base_url('/nzr_admin/admin_home'); ?>">
+            <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
+            Dashboard Admin
+        </a>
+
+        <!-- VERIFIKASI SPJ -->
+    <a class="nav-link" href="<?= base_url('/spj-admin'); ?>">
+        <div class="sb-nav-link-icon"><i class="fas fa-briefcase"></i></div>
+        Verifikasi SPJ
+    </a>
+
+    <?php endif; ?>
+
+
+<?php if (in_array($role, ['pimpinan'])): ?>
+
+    <!-- DASHBOARD PIMPINAN -->
+    <a class="nav-link" href="<?= base_url('/pimpinan'); ?>">
+        <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
+        Dashboard
+    </a>
+
+    <!-- LIST SEMUA SPJ -->
+    <a class="nav-link" href="<?= base_url('/pimpinan'); ?>#list">
+        <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+        Daftar SPJ
+    </a>
+
+<?php endif; ?>
+
+</div>
 
                 </div>
 

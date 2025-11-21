@@ -23,9 +23,9 @@ class Pelaporan extends BaseController
     {
         $judul_browser = 'Data BKU Kecamatan'; // Set the title for the browser tab
         $sub_judul = 'Data pelaporan'; // Set the subtitle for the page
-        if (empty(session()->get('id_kecamatan')) || empty(session()->get('kecamatan'))) {
-            session()->setFlashdata('error', 'Kecamatan tidak ditemukan');
-        }
+        // if (empty(session()->get('id_kecamatan')) || empty(session()->get('kecamatan'))) {
+        //     session()->setFlashdata('error', 'Kecamatan tidak ditemukan');
+        // }
         // Load the Grocery CRUD library
         // $this->load->library('grocery_CRUD'); // Not needed in CodeIgniter 4
 

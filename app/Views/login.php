@@ -55,7 +55,7 @@
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Nizar Suryaman 2025</div>
+                        <div class="text-muted">Copyright &copy; Leony 2025</div>
                         <div>
                             <a href="/nzr_admin">Bawaslu</a>
                         </div>

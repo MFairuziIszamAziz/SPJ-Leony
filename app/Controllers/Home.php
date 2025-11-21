@@ -24,9 +24,9 @@ class Home extends BaseController
             'id_kecamatan' => session()->get('id_kecamatan'),
             // Add other data as needed
         ];
-        if (empty(session()->get('id_kecamatan')) || empty(session()->get('kecamatan'))) {
-            session()->setFlashdata('error', 'Kecamatan tidak ditemukan');
-        }
+        // if (empty(session()->get('id_kecamatan')) || empty(session()->get('kecamatan'))) {
+        //     session()->setFlashdata('error', 'Kecamatan tidak ditemukan');
+        // }
         // return view('home', $data);
         // For simplicity, just return the home view    
         return view('home', $this->identitas() + $data);

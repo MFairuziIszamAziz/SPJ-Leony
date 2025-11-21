@@ -2,119 +2,186 @@
 
 namespace App\Controllers;
 
-use App\Libraries\GroceryCrud;
-use PhpOffice\PhpSpreadsheet\Reader\Xls\MD5;
-
+use App\Controllers\BaseController;
+use App\Models\ModelUser;
 
 class User extends BaseController
 {
+    /**
+     * Hanya boleh diakses admin
+     */
+    private function requireAdmin()
+    {
+        if (! session()->get('logged_in') || ! session()->has('user_id')) {
+            return redirect()->to('/login');
+        }
+
+        if (session()->get('role') !== 'admin') {
+            return redirect()->to('/nzr_admin'); // atau lempar 404
+        }
+
+        return null;
+    }
+
+    // LIST USER
     public function index()
     {
-        // Check if the user is logged in
-        if (!session()->has('user_id')) {
-            // If not logged in, redirect to the login page
-            return redirect()->to('/login');
-        }
-        if (session()->get('role') <> 'admin') {
-            return redirect()->to('/nzr_admin');
-        }
-        return redirect()->to('/user/datauser'); // Redirect to dashboard or home page
+        if ($resp = $this->requireAdmin()) return $resp;
+
+        $userModel = new ModelUser();
+        $users = $userModel->findAll();
+
+        $data = [
+            'judul'     => 'Data User',
+            'sub_judul' => 'Daftar User',
+            'users'     => $users,
+        ];
+
+        return view('user/index', $data);
     }
-    public function datauser()
+
+    // FORM TAMBAH
+    public function create()
     {
-        $judul_browser = 'Data User'; // Set the title for the browser tab
-        $sub_judul = 'Data User'; // Set the subtitle for the page
-        // Load the Grocery CRUD library
-        // $this->load->library('grocery_CRUD'); // Not needed in CodeIgniter 4
+        if ($resp = $this->requireAdmin()) return $resp;
 
-        // Check if the user is logged in
-        if (!session()->has('user_id')) {
-            // If not logged in, redirect to the login page
-            return redirect()->to('/login');
-        }
-        if (session()->get('role') <> 'admin') {
-            return redirect()->to('/nzr_admin');
-        }
-        $crud = new GroceryCrud();
+        $data = [
+            'judul'     => 'Tambah User',
+            'sub_judul' => 'Form Tambah User',
+        ];
 
-        $crud->setTheme('flexigrid'); // Set the theme to datatables
-        $crud->setTable('t_user');
-        $crud->where('role =', 'admin');
-        $crud->setPrimaryKey('id_user'); // Set the primary key for the table
+        return view('user/create', $data);
+    }
 
-        $crud->columns(['username', 'password', 'role']); // Set the columns to display in the list view
-        $crud->editFields(['username', 'password', 'role', 'updated_at']); // Set the relation for the role field
-        $crud->addFields(['username', 'password', 'role', 'created_at', 'updated_at']); // Set the fields to display in the add form
-        $crud->fieldType('password', 'password'); // Set the password field type to password
-        $crud->fieldType('created_at', 'hidden', date('Y-m-d H:i:s')); // Set the create_at field to hidden
-        $crud->fieldType('updated_at', 'hidden', date('Y-m-d H:i:s')); // Set the updated_at field to hidden
-        $crud->requiredFields(['username', 'password', 'role']); // Set the required fields for the form
+    // SIMPAN USER BARU
+    public function store()
+    {
+        if ($resp = $this->requireAdmin()) return $resp;
 
-        // Dropdown 
-        $crud->fieldType(
-            'role',
-            'dropdown',
-            array('user' => 'user', 'admin' => 'admin')
-        );
-        $crud->displayAs('role', 'role');
+        $username = $this->request->getPost('username');
+        $password = $this->request->getPost('password');
+        $role     = $this->request->getPost('role');
 
-        $crud->callbackEditField('password', array(
-            $this,
-            'callback_edit_password'
-        ));
-        $crud->callbackAddField('password', array(
-            $this,
-            'callback_edit_password'
-        ));
-        $crud->callbackBeforeInsert(array($this, 'md5_password'));
-        $crud->callbackBeforeUpdate(array($this, 'md5_password'));
-
-        $crud->setSubject('User', 'Users'); // Set the subject for the CRUD
-
-        $crud->setRead();
-        if (session()->get('role') <> 'admin') {
-            $crud->unsetAdd();
-            $crud->unsetClone();
-            $crud->unsetDelete();
-            $crud->unsetEdit();
-        } else {
-            $crud->setClone();
+        if (empty($username) || empty($password) || empty($role)) {
+            session()->setFlashdata('error', 'Username, password, dan role wajib diisi.');
+            return redirect()->back()->withInput();
         }
 
+        $userModel = new ModelUser();
 
-        $output = $crud->render();
+        // CEK USERNAME DUPLIKAT
+        if ($userModel->where('username', $username)->first()) {
+            session()->setFlashdata('error', 'Username sudah dipakai.');
+            return redirect()->back()->withInput();
+        }
 
-        return view('grocery_view', (array)$output + [
-            'judul' => $judul_browser,
-            'sub_judul' => $sub_judul,
-            'css_files' => $output->css_files,
-            'js_files' => $output->js_files,
+        // LOGIN LAMA PAKAI MD5 → samain
+        $passwordHash = md5($password);
+
+        $userModel->insert([
+            'username'   => $username,
+            'password'   => $passwordHash,
+            'role'       => $role,
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s'),
         ]);
-        // return $this->_groceryOutput($output);
+
+        session()->setFlashdata('success', 'User berhasil ditambahkan.');
+        return redirect()->to('/user');
     }
 
-
-    public function callback_edit_password($value)
+    // FORM EDIT
+    public function edit($id)
     {
-        // This function will be called when editing the password field
-        // You can return a custom input field or any other HTML you want
-        return '<input type="password" class="form-control" name="password" value="" />';
+        if ($resp = $this->requireAdmin()) return $resp;
+
+        $userModel = new ModelUser();
+        $user = $userModel->find($id);
+
+        if (! $user) {
+            session()->setFlashdata('error', 'User tidak ditemukan.');
+            return redirect()->to('/user');
+        }
+
+        $data = [
+            'judul'     => 'Edit User',
+            'sub_judul' => 'Form Edit User',
+            'user'      => $user,
+        ];
+
+        return view('user/edit', $data);
     }
-    public function md5_password($post_array)
+
+    // SIMPAN EDIT
+    public function update($id)
     {
+        if ($resp = $this->requireAdmin()) return $resp;
 
-        // $post_array->data['updated_at'] = date('Y-m-d H:i:s');
-        $password = $post_array->data['password'];
-        $post_array->data['password'] = md5($password);
+        $userModel = new ModelUser();
+        $user = $userModel->find($id);
 
-        return $post_array;
+        if (! $user) {
+            session()->setFlashdata('error', 'User tidak ditemukan.');
+            return redirect()->to('/user');
+        }
+
+        $username = $this->request->getPost('username');
+        $password = $this->request->getPost('password'); // boleh kosong
+        $role     = $this->request->getPost('role');
+
+        if (empty($username) || empty($role)) {
+            session()->setFlashdata('error', 'Username dan role wajib diisi.');
+            return redirect()->back()->withInput();
+        }
+
+        // Cek username duplikat (kecuali dirinya sendiri)
+        $existing = $userModel->where('username', $username)
+                              ->where('id_user !=', $id)
+                              ->first();
+        if ($existing) {
+            session()->setFlashdata('error', 'Username sudah dipakai.');
+            return redirect()->back()->withInput();
+        }
+
+        $dataUpdate = [
+            'username'   => $username,
+            'role'       => $role,
+            'updated_at' => date('Y-m-d H:i:s'),
+        ];
+
+        // Kalau password diisi, update + md5
+        if (! empty($password)) {
+            $dataUpdate['password'] = md5($password);
+        }
+
+        $userModel->update($id, $dataUpdate);
+
+        session()->setFlashdata('success', 'User berhasil diperbarui.');
+        return redirect()->to('/user');
     }
-    private function _groceryOutput($output = null)
-    {
 
-        return view(
-            'grocery_view',
-            (array)$output
-        );
+    // HAPUS USER
+    public function delete($id)
+    {
+        if ($resp = $this->requireAdmin()) return $resp;
+
+        $userModel = new ModelUser();
+        $user = $userModel->find($id);
+
+        if (! $user) {
+            session()->setFlashdata('error', 'User tidak ditemukan.');
+            return redirect()->to('/user');
+        }
+
+        // Opsional: jangan biarkan admin hapus dirinya sendiri
+        if ((int)$id === (int)session()->get('user_id')) {
+            session()->setFlashdata('error', 'Tidak bisa menghapus akun yang sedang digunakan.');
+            return redirect()->to('/user');
+        }
+
+        $userModel->delete($id);
+
+        session()->setFlashdata('success', 'User berhasil dihapus.');
+        return redirect()->to('/user');
     }
 }
